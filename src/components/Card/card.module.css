@@ -1,0 +1,36 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.2)),
+    url(../../assets/surf.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  color: rgb(3, 3, 3);
+  position: relative;
+  height: 100vh;
+}
+.title {
+  line-height: 1;
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+}
+.image {
+  border-radius: 3px;
+  box-shadow: 24px 21px 41px -46px rgba(0, 0, 0, 0.61);
+  width: 50%;
+}
+@media screen and (max-width: 900px) {
+  .card {
+    flex-direction: column;
+    background-position: 70% 0%;
+    /* background-position: right; */
+  }
+  .image {
+    width: 80%;
+  }
+}

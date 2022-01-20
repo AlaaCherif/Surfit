@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+html {
+  background-color: #eee;
+  scroll-behavior: smooth;
+}
+/* img {
+  width: 50%;
+} */

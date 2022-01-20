@@ -1,0 +1,17 @@
+.footer {
+  height: 40vh;
+  background-color: #2f2b2c;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-top: 1.5rem;
+}
+.title {
+  color: rgb(100, 100, 100);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.text {
+  color: whitesmoke;
+}

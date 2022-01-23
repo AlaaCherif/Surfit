@@ -4,18 +4,22 @@ import Image from '../Wave/Image';
 import Card from '../Card/Card';
 
 export default function Home() {
-  const myRef = useRef(null);
-  const handleClick = () => {
-    window.scrollTo(0, myRef.current.offsetTop);
+  const down = useRef(null);
+  const up = useRef(null);
+  const scrollDown = () => {
+    window.scrollTo(0, down.current.offsetTop);
+  };
+  const scrollUp = () => {
+    window.scrollTo(0, up.current.offsetTop);
   };
   return (
     <>
-      <div style={{ height: '100vh' }}>
+      <div ref={up} style={{ height: '100vh' }}>
         <Image />
-        <Scroll handleClick={handleClick} />
+        <Scroll handleClick={scrollDown} />
       </div>
-      <div ref={myRef}>
-        <Card />
+      <div ref={down}>
+        <Card handleClick={scrollUp} />
       </div>
     </>
   );

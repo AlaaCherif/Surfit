@@ -32,6 +32,28 @@
   margin-top: 2rem;
   text-decoration: none;
 }
+.button3 {
+  padding: 10px 25px;
+  display: inline-block;
+  font: normal bold 26px/1 'Open Sans', sans-serif;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  margin-top: 2rem;
+  text-decoration: none;
+  border: 2px solid #2f2b2c;
+  color: #2f2b2c;
+}
+.button3:hover,
+.button3:active {
+  background-color: #2f2b2c;
+  color: #eee;
+  border: 2px solid #eee;
+}
 .button:hover,
 .button:active {
   background: rgb(0, 0, 0);
